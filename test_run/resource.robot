@@ -25,6 +25,11 @@ Open Browser To Home Page
 Home Page Should Be Open
     Title Should Be    Intercon Regenerative Center
 
-Go to Services Page
-    Click Button    Services
+Services Page Should Be Open
     Title Should Be     Services | Intercon Regenerative Center
+
+Go to Services Page
+    Click Link    xpath=//a[@href="/services"]
+    Set Selenium Speed    ${DELAY}
+    Services Page Should Be Open
+    
