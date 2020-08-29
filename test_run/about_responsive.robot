@@ -7,5 +7,3 @@ Resource          resource.robot
 
 *** Test Cases ***
 Test Run
-    Open Browser to About Page
-    [Teardown]    Close Browser
