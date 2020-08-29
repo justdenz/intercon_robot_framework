@@ -14,7 +14,7 @@ describe("Test Newsletter", () => {
     await page.type('input[name=email]', 'asd')
     const [button] = await page.$x("//button[contains(text(), 'Join')]");
     await button.click()
-    await delay(1000)
+    await page.waitForResponse(response=>response.status() === 400)
     const p = await page.$('p.errorMsg')
     expect(p).not.toBe(null)
   })
