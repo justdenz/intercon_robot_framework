@@ -14,6 +14,7 @@ ${VALID USER}     demo
 ${VALID PASSWORD}    mode
 ${HOMEPAGE URL}      http://${SERVER}/
 ${SERVICES URL}      http://${SERVER}/services
+${ABOUT URL}        http://${SERVER}/about
 ${WIDTH_MOBILE_S}        320
 ${WIDTH_MOBILE_M}        375
 ${WIDTH_MOBILE_L}        425
@@ -29,6 +30,10 @@ Open Browser To Home Page
     Set Selenium Speed    ${DELAY}
     Home Page Should Be Open
 
+Open Browser to About Page
+    Open Browser    ${ABOUT URL}   ${BROWSER}
+    Title Should Be     About Us | Intercon Regenerative Center
+
 Home Page Should Be Open
     Title Should Be    Intercon Regenerative Center
 
@@ -39,4 +44,7 @@ Go to Services Page
     Click Link    xpath=//a[@href="/services"]
     Set Selenium Speed    ${DELAY}
     Services Page Should Be Open
+
+
+
     
