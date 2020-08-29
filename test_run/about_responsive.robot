@@ -5,5 +5,8 @@ Documentation     A test suite to check mobile responsiveness in about page
 ...               the imported resource file.
 Resource          resource.robot
 
+*** Variables ***
+${DIR}    screenshots
+
 *** Test Cases ***
-Test Run
+Responsive About Page
