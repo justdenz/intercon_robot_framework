@@ -20,7 +20,7 @@ ${WIDTH_MOBILE_L}        425
 ${WIDTH_TABLET}        768
 ${WIDTH_LAPTOP}       1024
 ${WIDTH_LAPTOP_L}     1440
-${WITDH_4K}     2560
+${WIDTH_4K}     2560
 ${HEIGHT}       815
 
 *** Keywords ***

@@ -8,6 +8,6 @@ Resource          resource.robot
 *** Test Cases ***
 Valid Homepage
     Open Browser To Home Page
-    Set Window Size    ${WIDTH}   ${HEIGHT}
+    Set Window Size    ${WIDTH_4K}   ${HEIGHT}
     Capture Page Screenshot
     [Teardown]    Close Browser
