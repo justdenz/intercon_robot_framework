@@ -57,3 +57,7 @@ Open Browser to Contact Page
     Open Browser    ${CONTACT URL}   ${BROWSER}
     Set Selenium Speed    ${DELAY}
     Title Should Be     Contact Us - Intercon Regenerative Center
+
+Wait Until Newsletter Modal
+    Wait Until Element Is Visible   id:container    4000
+    Click Element   class:exit
