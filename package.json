@@ -1,0 +1,26 @@
+{
+  "name": "intercon_robot_framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest || exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justdenz/intercon_robot_framework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justdenz/intercon_robot_framework/issues"
+  },
+  "homepage": "https://github.com/justdenz/intercon_robot_framework#readme",
+  "dependencies": {
+    "puppeteer": "^5.2.1"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2",
+    "jest-puppeteer": "^4.4.0"
+  }
+}

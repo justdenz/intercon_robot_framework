@@ -1,8 +1,1 @@
-chromedriver.exe
-
-log.html
-output.xml
-report.html
-debug.log
-__pycache__
-Screenshots
+node_modules
