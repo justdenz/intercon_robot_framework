@@ -26,7 +26,7 @@ ${WIDTH_TABLET}        768
 ${WIDTH_LAPTOP}       1024
 ${WIDTH_LAPTOP_L}     1440
 ${WIDTH_4K}     2560
-${HEIGHT}       815
+${HEIGHT}       5000
 
 *** Keywords ***
 Open Browser To Home Page
@@ -59,7 +59,5 @@ Open Browser to Contact Page
     Set Selenium Speed    ${DELAY}
     Title Should Be     Contact Us - Intercon Regenerative Center
 
-Wait Until Newsletter Modal
-    Set Selenium Implicit Wait       5 seconds
-    Wait Until Element Is Visible   id:container        4 seconds
-    Click Element       class:exit
+Prevent Newletter Modal
+    Execute JavaScript    localStorage.isSubscribed = true
