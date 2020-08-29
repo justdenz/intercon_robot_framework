@@ -9,5 +9,6 @@ Resource          resource.robot
 Valid Homepage
     Open Browser To Home Page
     Set Window Size    ${WIDTH_4K}   ${HEIGHT}
+    Set Screenshot Directory    \hello
     Capture Page Screenshot
     [Teardown]    Close Browser
