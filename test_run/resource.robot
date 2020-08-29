@@ -14,8 +14,14 @@ ${VALID USER}     demo
 ${VALID PASSWORD}    mode
 ${HOMEPAGE URL}      http://${SERVER}/
 ${SERVICES URL}      http://${SERVER}/services
-${WIDTH}        828
-${HEIGHT}       1792
+${WIDTH_MOBILE_S}        320
+${WIDTH_MOBILE_M}        375
+${WIDTH_MOBILE_L}        425
+${WIDTH_TABLET}        768
+${WIDTH_LAPTOP}       1024
+${WIDTH_LAPTOP_L}     1440
+${WITDH_4K}     2560
+${HEIGHT}       815
 
 *** Keywords ***
 Open Browser To Home Page
