@@ -6,12 +6,12 @@ Documentation     A test suite with tests for responsiveness
 Resource          resource.robot
 
 *** Variables ***
-${DIR}    ./screenshots/home
+${DIR}    ./screenshots/services
 
 *** Test Cases ***
 Responsive Homepage
     Set Screenshot Directory    ${DIR}
-    Open Browser To Home Page
+    Open Browser to Services Page
     Wait Until Newsletter Modal
     Set Window Size    ${WIDTH_4K}   ${HEIGHT}
     Capture Page Screenshot   4K.png

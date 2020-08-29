@@ -60,5 +60,6 @@ Open Browser to Contact Page
     Title Should Be     Contact Us - Intercon Regenerative Center
 
 Wait Until Newsletter Modal
-    Wait Until Element Is Visible   id:container    4000
-    Click Element   class:exit
+    Set Selenium Implicit Wait       5 seconds
+    Wait Until Element Is Visible   id:container        4 seconds
+    Click Element       class:exit
