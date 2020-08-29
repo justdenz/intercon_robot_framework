@@ -50,7 +50,7 @@ Open Browser to Blog Page
     Title Should Be     Blog | Intercon Regenerative Center
 
 Open Browser to About Page
-    Open Browser    ${ABOUT URL}   ${BROWSER}
+    Open Browser      ${ABOUT URL}   ${BROWSER}
     Set Selenium Speed    ${DELAY}
     Title Should Be     About Us | Intercon Regenerative Center
 
