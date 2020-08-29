@@ -6,7 +6,7 @@ Documentation     A test suite with tests for responsiveness
 Resource          resource.robot
 
 *** Variables ***
-${DIR}    screenshots
+${DIR}    ./screenshots/home
 
 *** Test Cases ***
 Responsive Homepage
