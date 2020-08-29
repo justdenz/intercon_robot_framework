@@ -12,7 +12,7 @@ ${DIR}    ./screenshots/home
 Responsive Homepage
     Set Screenshot Directory    ${DIR}
     Open Browser To Home Page
-    Wait Until Newsletter Modal
+    Prevent Newletter Modal
     Set Window Size    ${WIDTH_4K}   ${HEIGHT}
     Capture Page Screenshot   4K.png
     Set Window Size    ${WIDTH_LAPTOP_L}   ${HEIGHT}
