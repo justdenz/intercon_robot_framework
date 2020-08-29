@@ -8,7 +8,7 @@ Library           SeleniumLibrary
 
 *** Variables ***
 ${SERVER}         intercon-git-ty.gabtan99.now.sh
-${BROWSER}        Chrome
+${BROWSER}        chrome
 ${DELAY}          0
 ${VALID USER}     demo
 ${VALID PASSWORD}    mode
@@ -25,7 +25,7 @@ ${WIDTH_TABLET}        768
 ${WIDTH_LAPTOP}       1024
 ${WIDTH_LAPTOP_L}     1440
 ${WIDTH_4K}     2560
-${HEIGHT}       5000
+${HEIGHT}       815
 
 *** Keywords ***
 Open Browser To Home Page

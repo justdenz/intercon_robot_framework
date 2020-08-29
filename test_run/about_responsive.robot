@@ -10,8 +10,3 @@ ${DIR}    screenshots
 
 *** Test Cases ***
 Responsive About Page
-    Set Screenshot Directory    ${DIR}
-    Open Browser To About Page
-    Set Window Size    ${WIDTH_MOBILE_L}   ${HEIGHT}
-    Capture Element Screenshot      xpath://*[body]
-    [Teardown]    Close Browser
