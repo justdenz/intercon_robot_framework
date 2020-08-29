@@ -5,7 +5,6 @@ Documentation     A resource file with reusable keywords and variables.
 ...               domain specific language. They utilize keywords provided
 ...               by the imported SeleniumLibrary.
 Library           SeleniumLibrary
-Library           screenshot.py
 
 *** Variables ***
 ${SERVER}         intercon-git-ty.gabtan99.now.sh
@@ -26,7 +25,7 @@ ${WIDTH_TABLET}        768
 ${WIDTH_LAPTOP}       1024
 ${WIDTH_LAPTOP_L}     1440
 ${WIDTH_4K}     2560
-${HEIGHT}       5000
+${HEIGHT}       50000
 
 *** Keywords ***
 Open Browser To Home Page
