@@ -14,11 +14,12 @@ ${VALID USER}     demo
 ${VALID PASSWORD}    mode
 ${HOMEPAGE URL}      http://${SERVER}/
 ${SERVICES URL}      http://${SERVER}/services
+${WIDTH}        828
+${HEIGHT}       1792
 
 *** Keywords ***
 Open Browser To Home Page
     Open Browser    ${HOMEPAGE URL}    ${BROWSER}
-    Maximize Browser Window
     Set Selenium Speed    ${DELAY}
     Home Page Should Be Open
 

@@ -8,5 +8,6 @@ Resource          resource.robot
 *** Test Cases ***
 Valid Homepage
     Open Browser To Home Page
-    Go to Services Page
+    Set Window Size    ${WIDTH}   ${HEIGHT}
+    Capture Page Screenshot
     [Teardown]    Close Browser
