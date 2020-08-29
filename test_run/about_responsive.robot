@@ -6,7 +6,12 @@ Documentation     A test suite to check mobile responsiveness in about page
 Resource          resource.robot
 
 *** Variables ***
-${DIR}    screenshots
+${DIR}        ./screenshots/about
 
 *** Test Cases ***
 Responsive About Page
+    Set Screenshot Directory    ${DIR}
+    Open Browser to About Page
+    Set Window Size    ${WIDTH_MOBILE_L}   ${HEIGHT}
+    Capture Full Page Screenshot
+    [Teardown]      Close Browser
