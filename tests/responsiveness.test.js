@@ -8,8 +8,8 @@ describe("Test Responsiveness of Homepage", () => {
         localStorage.setItem('isSubscribed', true);
       });
       for (w in WIDTH) {
-        await page.setViewport({ width: WIDTH[w], height: HEIGHT });
-        await page.screenshot({ path: `./screenshots/${u}/${w}.jpeg`, type: 'jpeg' });
+        //await page.setViewport({ width: WIDTH[w], height: HEIGHT });
+        await page.screenshot({ path: `./screenshots/${u}/${w}.jpeg`, type: 'jpeg', fullPage: true });
       }
     }
   }, timeout);
