@@ -10,7 +10,7 @@ beforeAll(async () => {
 })
 
 describe("Test Home Target Modal", () => {
-    test('Test if the Male Issues Target at Home Page Has modal and redirects to targets page', async () => {
+    test('Test if the Immune Support Target at Home Page Has modal and redirects to targets page', async () => {
         let exist = await page.evaluate(async () => {
             return await new Promise(async resolve => {
                 const delay = (time) => {
@@ -18,7 +18,7 @@ describe("Test Home Target Modal", () => {
                         setTimeout(resolve, time)
                     });
                 }
-                let element = document.querySelector('#app > div:nth-child(6) > div > div:nth-child(1) > a > div > div')
+                let element = document.querySelector('#app > div:nth-child(6) > div > div:nth-child(3) > a > div > div')
                 test = true
                 element.click()
                 await delay(500)
@@ -29,7 +29,7 @@ describe("Test Home Target Modal", () => {
             })
         })
         let newUrl = await page.url()
-        exist = exist && (newUrl.indexOf('targets') > 0)
+        exist = exist && !!(newUrl.indexOf('targets') > 0)
         expect(exist).toBe(true)
     })
     
