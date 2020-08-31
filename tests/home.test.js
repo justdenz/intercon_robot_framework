@@ -10,7 +10,7 @@ beforeAll(async () => {
 })
 
 describe("Test Home Target Modal", () => {
-    test('Test if home target has modal', async () => {
+    test('Test if the Male Issues Target at Home Page Has modal and redirects to targets page', async () => {
         let exist = await page.evaluate(async () => {
             return await new Promise(async resolve => {
                 const delay = (time) => {
@@ -28,8 +28,11 @@ describe("Test Home Target Modal", () => {
                 resolve(test)
             })
         })
+        let newUrl = await page.url()
+        exist = exist && (newUrl.indexOf('targets') > 0)
         expect(exist).toBe(true)
     })
+    
 });
   
   
