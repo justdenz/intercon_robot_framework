@@ -2,10 +2,10 @@ Jest-Pupeteer Automation for Intercon
 
 When running automation: 
 ```
-    #to run pupeteer-test
-    npm run test
+#to run pupeteer-test
+npm run test
 ```
-2. Results will be displayed in the terminal and the screenshots for responsivess will be saved 
+Results will be displayed in the terminal and the screenshots for responsivess will be saved 
 
 Test cases inlude:
 1. Mobile responsiveness
