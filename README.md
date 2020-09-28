@@ -3,7 +3,7 @@
 ***Intercon Repository:***
 https://github.com/gabtan99/intercon
 
-***When running automation:***
+#### When running automation: ####
 ```
 #make sure install all the packages before running jest
 npm i
@@ -13,9 +13,9 @@ npm i
 #to run jest-pupetter
 npm run test
 ```
-Results will be displayed in the terminal and the screenshots for responsivess will be saved 
+Screenshots for mobile responsiveness can be located at the /screenshots folder.
 
-***Test cases inlude:***
+#### Test cases inlude: ####
 1. Mobile responsiveness
 2. Targets
 3. Services
